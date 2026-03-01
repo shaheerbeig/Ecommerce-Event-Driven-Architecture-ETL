@@ -1,0 +1,1 @@
+from producer.publisher import RabbitMQPublisher

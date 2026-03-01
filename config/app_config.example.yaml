@@ -1,0 +1,24 @@
+postgres:
+  host: localhost
+  port: 5433
+  database: your_database_name
+  user: your_postgres_user
+  password: your_postgres_password
+  jdbc_url: "jdbc:postgresql://postgres:5432/your_database_name"
+
+rabbitmq:
+  host: localhost
+  port: 5673
+  user: your_rabbitmq_user
+  password: your_rabbitmq_password
+  queue_clickstream: clickstream
+
+minio:
+  endpoint: "http://minio:9000"
+  access_key: your_minio_user
+  secret_key: your_minio_password
+  bucket: datalake
+  s3a_endpoint: "http://minio:9000"
+
+spark:
+  master: "spark://spark-master:7077"

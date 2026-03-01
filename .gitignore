@@ -1,0 +1,51 @@
+# Environment variables with secrets
+.env
+docker/.env
+
+# Config files with credentials
+config/app_config.yaml
+config/app_config.docker.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Airflow
+airflow/logs/*
+airflow/**/__pycache__/
+!airflow/logs/.gitkeep
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker volumes data (optional - uncomment if you don't want to track)
+# docker/volumes/
+
+# Spark/Ivy cache
+.ivy2/
+spark-warehouse/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Temporary files
+*.log
+*.tmp
+.cache/
